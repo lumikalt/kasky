@@ -1,6 +1,6 @@
 # Käsky
 
-An assembly-esque programming language similar to Shenzhen I/O's.
+An assembly-esque programming language similar to [SHENZHEN I/O](https://www.zachtronics.com/shenzhen-io/)'s.
 
 ## Features
 
@@ -11,6 +11,9 @@ You can run as many instructions per time unit as you want, until the program sl
 
 The language has the following arithmetic instructions:
 
-| instruction | inputs | description |
-| add | R/I [\@R] | adds the input to `acc` or, if set, to R |
-| sub | R/I [\@R] | subtracts the input to `acc` or, if set, to R |
+| CMD | inputs | action |
+|-----|--------|--------|
+| add | R/I [\@R] | adds the input to `acc` and, if set, writes to R |
+| sub | R/I [\@R] | subtracts the input from `acc` and, if set, writes to R |
+| mul | R/I [\@R] | multiplies the input with `acc` and, if set, writes to R |
+| div | R/I [\@R] | divides `acc` by the input and, if set, writes to R |

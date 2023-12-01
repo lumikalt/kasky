@@ -1,3 +1,5 @@
+use kasky::{parser::tokenize, fetch_file};
+
 fn main() {
-    println!("Hello, world!");
+    tokenize(fetch_file("./example.ky".to_string()));
 }
