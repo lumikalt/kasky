@@ -1,0 +1,6 @@
+main x0:
+  teq x0 0
++ put "Hello, World!"
+- put "Goodbye."
+# force termination instead of default behaviour (loop)
+  halt
